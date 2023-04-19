@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: clamp(200px, 40%, 300px);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    border-radius: 2rem;
+    padding-inline: 1ch;
+    min-height: 3ch;
+    border: 1px solid grey;
+}
+
+input[type="text"]#resultado {
+    width: 50%;
+    display: inline-block;
+    text-align: end;
+}
+
+.alerta {
+    font-size: 0.8em;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+button {
+    width: fit-content;
+    align-self: flex-end;
+}
+
+div {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

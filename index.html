@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./velocidade-media.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title></title>
+</head>
+
+<!-- Aluno: Pedro Augusto Lopes Ramos de Oliveira -->
+<!-- RA: 201290 -->
+<!-- Data: 19/04/2023 -->
+
+<body>
+
+    <h1>Cálculo de velocidade média</h1>
+
+    <fieldset>
+        <label for="distancia">Distância:</label>
+        <input type="number" required name="distancia" id="distancia" min="0">
+        <span id="alerta-distancia" class="alerta"></span>
+        
+        <label for="tempo">Tempo:</label>
+        <input type="number" required name="tempo" id="tempo" min="0">
+        <span id="alerta-tempo" class="alerta"></span>
+
+        <button onclick="calcular()">Calcular velocidade média</button>
+        
+        <div>Velocidade média: <input type="text" readonly name="resultado" id="resultado"></div>
+        <span id="alerta"></span>
+    </fieldset>
+</body>
+</html>
